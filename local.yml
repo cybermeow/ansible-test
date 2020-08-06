@@ -3,8 +3,8 @@
 
   tasks:
 
-    #- name: Install Ansible, Git, Cron
-    #  command: rpm-ostree install ansible git cronie
+    - name: Install Ansible, Git, Cron
+      command: rpm-ostree install git #ansible cronie
 
     - name: Reboot system
       command: systemctl reboot
